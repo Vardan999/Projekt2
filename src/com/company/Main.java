@@ -57,6 +57,36 @@ public class Main {
 
         }
 
+        class InfoAbout {
+            private int birthNumber;
+            private String name;
+            private String lastName;
+
+            InfoAbout() {
+                this.birthNumber = 0;
+                this.name = name;
+                this.lastName = lastName;
+            }
+
+            public int calculaterAge(int birthNumber) {
+                int year = 2022;
+                int age = year - birthNumber;
+                return age;
+
+            }
+
+            public String names(String name) {
+                this.name = name;
+                return name;
+            }
+
+            public String lastNames(String LastName) {
+                this.lastName = lastName;
+                return LastName;
+            }
+
+        }
+
         Quarter quarter1 = new Quarter();
 
         System.out.println(quarter1.parr(20));
@@ -66,7 +96,10 @@ public class Main {
         Triangle triangle1 = new Triangle();
         System.out.println(triangle1.perimeter(5, 5, 5));
 
-
+        InfoAbout infoAbout1 = new InfoAbout();
+        System.out.println(infoAbout1.calculaterAge(1999));
+        System.out.println(infoAbout1.names("Vardan"));
+        System.out.println(infoAbout1.lastNames("Khublaryan"));
     }
 
 }
